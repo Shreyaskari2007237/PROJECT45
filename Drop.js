@@ -1,5 +1,5 @@
 class Drop{
-    constructor(x,y,r){
+    constructor(x,y){
 
         var options={
             restitution:0.1,
@@ -8,8 +8,8 @@ class Drop{
         }
         this.x=x;
         this.y=y;
-        this.r=r;
-        this.body=Bodies.circle(this.x,this.y,(this.r-20)/2,options);
+        this.r=5;
+        this.body=Bodies.circle(this.x,this.y,5,options);
         World.add(world,this.body);
     }
     update(){
